@@ -17,7 +17,7 @@ const News = ({ simplified }) => {
 		newsCategory,
 		count: simplified ? 6 : 12,
 	})
-  // const data
+	const { data } = useGetCryptosQuery(100)
 
 	console.log(cryptoNews)
 
@@ -32,11 +32,12 @@ const News = ({ simplified }) => {
 						className='select-news'
 						placeholder='Select a Crypto'
 						optionFilterProp='children'
-						onChange={(value) => console.log(value)}
+						onChange={(value) => setNewsCategory(value)}
 						filterOption={(input, option) =>
 							option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
 						}>
 						<Option value='Cryptocurrency'>Cryptocurrency</Option>
+            {data?.data?.coins.map((coin)=><Option value={coin.name}>{coin.name}</Option>)}
 					</Select>
 				</Col>
 			)}
