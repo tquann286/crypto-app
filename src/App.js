@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space } from 'antd'
+import { GithubOutlined, FacebookFilled } from '@ant-design/icons'
 
 import {
 	Navbar,
@@ -43,15 +44,27 @@ const App = () => {
 				<div className='footer'>
 					<Typography.Title
 						level={5}
-						style={{ color: 'white', textAlign: 'center' }}>
+						style={{ color: 'white', textAlign: 'center' }}
+					>
 						Cryptoverse
 						<br />
 						All rights reserverd
 					</Typography.Title>
 					<Space>
-					<Link to='/'>Home</Link>
-					<Link to='/exchanges'>Exchanges</Link>
-					<Link to='/news'>News</Link>
+						<a
+							href='https://github.com/tquann286'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<GithubOutlined />
+						</a>
+						<a
+							href='https://www.facebook.com/trung.quann.2806'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<FacebookFilled />
+						</a>
 					</Space>
 				</div>
 			</div>
