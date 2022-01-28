@@ -1,6 +1,6 @@
 # Cryptocurrencies App
 
-### Tất cả các thị trường Crypto Crypto và trao đổi tin tức tiền điện tử phổ biến và hơn thế nữa
+### Tất cả các thị trường Crypto Crypto và trao đổi tin tức tiền điện tử phổ biến và hơn thế nữa (Có responsive)
 
 ## Công nghệ mình sử dụng trong project này:
 
