@@ -5,7 +5,7 @@ import { Col, Row, Typography } from 'antd'
 const { Title } = Typography
 
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
-	// console.log('%c Hiện tại API đang lỗi! ', ' color: #fc3f3f')
+	console.log('%c Hiện tại API đang lỗi! ', ' color: #fc3f3f')
 	const coinPrice = []
 	const coinTimestamp = []
 
