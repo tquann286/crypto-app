@@ -14,13 +14,13 @@ const demoImage =
 
 const News = ({ simplified }) => {
 	const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
-	const { data: cryptoNews } = useGetCryptoNewsQuery({
+	const { data: cryptoNews, isFetching } = useGetCryptoNewsQuery({
 		newsCategory,
 		count: simplified ? 6 : 20,
 	})
 	const { data } = useGetCryptosQuery(100)
 
-	if (!cryptoNews?.value) return <Loader />
+	if (isFetching) return <Loader />
 
 	return (
 		<Row gutter={[24, 24]}>
