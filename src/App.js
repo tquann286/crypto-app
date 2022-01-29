@@ -10,6 +10,7 @@ import {
 	Cryptocurrencies,
 	CryptoDetails,
 	News,
+	NoMatch,
 } from './components'
 import './App.css'
 
@@ -37,6 +38,9 @@ const App = () => {
 							</Route>
 							<Route exact path='/news'>
 								<News />
+							</Route>
+							<Route exact path='*'>
+								<NoMatch />
 							</Route>
 						</Switch>
 					</div>
