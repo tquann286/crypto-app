@@ -13,7 +13,7 @@
 
 - React
 - React-router-dom: Điều hướng trang SPA trong React
-- Redux-toolkit (Redux): fetch dữ liệu từ API
+- Redux-toolkit (Redux): Sử dụng global state
 - Ant design: Giúp tạo giao diện nhanh và đẹp cùng nhiều thứ khác
 - Chart.js: tạo biểu đồ 
 - RapidAPI: Nguồn api
